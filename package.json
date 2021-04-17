@@ -1,0 +1,24 @@
+{
+  "name": "static-site-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.9.0"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ogdenstudios/static-site-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ogdenstudios/static-site-template/issues"
+  },
+  "homepage": "https://github.com/ogdenstudios/static-site-template#readme",
+  "description": ""
+}
