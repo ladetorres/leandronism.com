@@ -1,3 +1,7 @@
+---
+permalink: /index.html
+---
+
 <!--suppress HtmlDeprecatedAttribute -->
 <div align="center">
   <h1>leandronism.com</h1>
