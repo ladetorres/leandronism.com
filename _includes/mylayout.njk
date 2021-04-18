@@ -1,0 +1,100 @@
+---
+site_title: leandronism
+---
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="{{ '/assets/favicon.png' | url }}">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Sarabun' rel='stylesheet'>
+  <meta name="theme-color" content="#ffffff">
+  <!--  <link rel="shortcut icon" href="favicon.png"/>-->
+  <title>{{ title }}</title>
+  <meta http-equiv="Content-Language" content="th">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-874">
+  <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
+</head>
+<body class="screen">
+<div class="main-screen">
+  <!-- nav bar -->
+  <div data-include="main-page-header"></div>
+  <div class="nav-header">
+    <div class="nav-title">
+      <div>
+        leandronism
+      </div>
+      <hr class="solid divider">
+    </div>
+    <div class="nav-nav">
+      <div class="nav-tabs">
+        <div class="nav-tab-items">
+          <div class="nav-tab-item">
+            Home
+          </div>
+          <div class="nav-tab-item">
+            Blogs
+          </div>
+          <div class="nav-tab-item">
+            About Me
+          </div>
+        </div>
+      </div>
+      <hr class="solid divider">
+    </div>
+  </div>
+  <div>
+    {{ content | safe }}
+  </div>
+  <div class="footer">
+    <div class="footer-content">
+      <div>
+        <!--                    <p>-->
+        <!--                    <span lang="th" class="thai-text thai-font-normal">-->
+        <!--                        สวัสดีนะครับ!-->
+        <!--                    </span>-->
+        <!--                    </p>-->
+      </div>
+      <div class="social">
+        <div class="social-item">
+          <a href="https://medium.com/@leandrodetorres23" target="_blank" class="social-img">
+            <img src="{{ '/assets/medium.svg' | url }}" alt="medium"
+                 class="social-img"/>
+          </a>
+        </div>
+        <div class="social-item">
+          <a href="https://letterboxd.com/9eandronism/" target="_blank">
+            <img src="{{ '/assets/boxd.svg' | url }}" alt="letterboxd"
+                 class="social-img"/>
+          </a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.linkedin.com/in/leandro-de-torres/" target="_blank">
+            <img src="{{ '/assets/in.svg' | url }}" alt="linkedin"
+                 class="social-img"/>
+          </a>
+        </div>
+        <div class="social-item">
+          <a href="https://twitter.com/9eandro/" target="_blank">
+            <img src="{{ '/assets/twt.svg' | url }}"" alt="twitter"
+                 class="social-img"/>
+          </a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.instagram.com/leandroadetorres/" target="_blank">
+            <img src="{{ '/assets/ig.svg' | url }}" alt="ig"
+                 class="social-img"/>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="{{ '/js/main.js' | url }}"></script>
+</body>
+</html>
+

@@ -1,0 +1,20 @@
+---
+layout: mylayout.njk
+---
+
+<div class="content">
+  <div class="header-main">
+    {{ contentTitle }}
+  </div>
+  <div class="content-main">
+    {{ content | safe }}
+  </div>
+  <div class="side-note-text">
+    Published {{ published }}
+    {% if (published != updated) %}
+    <div>
+      Updated {{ updated }}
+    </div>
+    {% endif %}
+  </div>
+</div>
