@@ -11,7 +11,9 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.9.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "nunjucks": "^3.2.3"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ogdenstudios/static-site-template.git"
