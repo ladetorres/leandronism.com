@@ -2,8 +2,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPassthroughCopy("assets");
-  eleventyConfig.addPassthroughCopy("blogs");
-  eleventyConfig.addPassthroughCopy("views");
+  eleventyConfig.addPassthroughCopy("_includes");
   return {
     includes: "_includes",
     data: "_data",
