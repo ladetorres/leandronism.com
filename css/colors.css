@@ -1,0 +1,26 @@
+:root {
+  --off-white: #808080;
+  --almost-white: #F8F8F8;
+  --not-white: #F5F5F5;
+  --not-white-1: #D3D3D3;
+  --screen-bg-white: #303030;
+
+  --cerulean: #9BB7D4;
+  --quiet: #1B7340;
+  --burnt-coral: #E9897E;
+  --french-blue: #0072B5;
+  --rust: #B55A30;
+  --marigold: #FDAC53;
+  --green-ash: #A0DAA9;
+  --brave-ground: #F19828;
+
+  --link: #0089c7;
+
+  /*tropical;*/
+  --tropical-humid: #d7ede2;
+  --tropical-humid-2: #f7fffb;
+  --foliage: #68864f;
+  --granite-rock: #494941;
+  --morning-mist: #cbccbc;
+
+}
