@@ -10,7 +10,13 @@ site_title: leandronism
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="{{ '/assets/favicon.png' | url }}">
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Sarabun' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Krub' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Athiti' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Nanum Myeongjo' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Noto%20Sans%20JP' rel='stylesheet'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <meta name="theme-color" content="#ffffff">
   <!--  <link rel="shortcut icon" href="favicon.png"/>-->
   <title>{{ title }}</title>
@@ -18,35 +24,51 @@ site_title: leandronism
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Type" content="text/html; charset=windows-874">
   <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q5VG5YN766"></script>
+  <script>
+    try {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-Q5VG5YN766');
+    } catch (e) {
+      console.log(e);
+    }
+  </script>
 </head>
 <body class="screen">
 <div class="main-screen">
   <!-- nav bar -->
-  <div class="nav-header">
+  <div class="nav-header" style="padding-bottom: 10px">
     <div class="nav-title">
-      <div>
+      <div class="pseudo-link" style="position: absolute">
         leandronism
       </div>
-      <hr class="solid divider">
-    </div>
-    <div class="nav-nav">
-      <div class="nav-tabs">
-        <div class="nav-tab-items">
-          <div class="nav-tab-item">
-            Home
-          </div>
-          <div class="nav-tab-item">
-            Blogs
-          </div>
-          <div class="nav-tab-item">
-            About Me
+      <div class="nav-nav responsive-web">
+        <div class="nav-tabs" style="flex-direction: row; justify-content: center; width: auto; margin: auto">
+          <div class="nav-tab-items">
+            <div class="nav-tab-item">
+              <a href="/" class="default-link" id="nav-home">
+                Home
+              </a>
+            </div>
+            <div class="nav-tab-item">
+              <a class="default-link pseudo-link" id="nav-features">
+                Features
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <hr class="solid divider">
+      <div class="responsive-mobile menu-hamburger pseudo-link" onclick="openSidebar()">
+        <img src="{{ '/assets/menu.png' | url }}" alt="menu">
+      </div>
     </div>
   </div>
-  <div>
+  <div class="progress" id="progress"></div>
+  <div class="content-container">
     {{ content | safe }}
   </div>
   <div class="footer">
@@ -60,7 +82,7 @@ site_title: leandronism
       </div>
       <div class="social">
         <div class="social-item">
-          <a href="https://medium.com/@leandrodetorres23" target="_blank" class="social-img">
+          <a href="https://medium.com/@leandronism" target="_blank" class="social-img">
             <img src="{{ '/assets/medium.svg' | url }}" alt="medium"
                  class="social-img"/>
           </a>
