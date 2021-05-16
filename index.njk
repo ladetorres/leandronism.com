@@ -3,91 +3,136 @@ title: leandronism
 layout: mylayout.njk
 ---
 
+<div style="background: white">
+  <div class="typing-container">
+    <div class="page-vspace"></div>
+    <div class="page-vspace"></div>
+      <div class="home-typing responsive-web">
+        Welcome to my
+        <span
+            class="txt-rotate"
+            data-period="2000"
+            data-rotate='[ "page", "thoughts", "ideas", "site", "reviews", "blog", "opinions" ]'></span>
+      </div>
+      <div class="home-typing responsive-mobile">
+        Welcome<br>to my
+        <span
+            class="txt-rotate"
+            data-period="2000"
+            data-rotate='[ "page", "thoughts", "ideas", "site", "reviews", "blog", "opinions" ]'></span>
+      </div>
+    <div class="page-vspace"></div>
+    <div class="page-vspace"></div>
+  </div>
+</div>
 <div class="content">
   <div class="content-main">
-    <div class="header-main">
-      Sawadee! I am an unfinished website.
+
+    <div class="page-vspace content-features-header">
+      <div>
+        FEATURED POSTS
+      </div>
+      <div>
+        <img class="chevron chevron-inactive" src="/assets/common/chevron_left.png" alt="left-arrow"/>
+        <img class="chevron pseudo-link" src="/assets/common/chevron_right.png" alt="right-arrow"/>
+      </div>
     </div>
-    <div class="header-sub">
-      Currently this has rubbish, incoherent crap just to help me see how stuff would look like.
-    </div>
-    <div class="content-text">
-      This site is a work in progress. Absolutely useless site. Nothing to do, nothing to see.
-      Pure, unadulterated static site.
-      <br>
-      This site is being done in pure html + css simpleness. Nothing fancy. Yet.
-      <div class="line-break"></div>
-      Not really. I use a think called nunjucks? And the eleventy thing to serve locally.
-      I don't understand what they are, but I'm using them.
-      <div class="line-break"></div>
-      I am in Montserrat font.
-      <div class="line-break"></div>
-      <div class="thai-text">
-          I am in Sarabun font for Thai text.
-        </div>
-      <span class="thai-text">
-          สวัสดีนะ!
-        </span>
-    </div>
-    <div class="header-main thai-text">
-      ผมชื่อเลียนขรับ
-    </div>
-    <div class="header-sub">
-      I am a subheader.
-    </div>
-    <div>
-      <div class="content-bg content-bg-height-default white-text parallax"
-           style="background-image: url('assets/arun.png')">
-        <div class="text-in-parallax">
-          <div class="header-main">
-            I am a header.
+      <div class="feature-header-line">
+      </div>
+      <div class="feature-header-gray-line">
+      </div>
+      <div class="content-features">
+        <div class="content-flex-item">
+          <img style="object-position: right bottom" class="features-list-img-preview" src="/assets/features/boonmee-2.png" alt="boonmee"/>
+          <div class="feature-type">
+            REVIEW
           </div>
-          <div class="content-text">
-            I am, sadly, not a header, just normal content. This is a photo (I stole from some other website I'm sorry) of Wat Arun in Bangkok, taken at dawn.
+          <div class="feature-title pseudo-link">
+            A Love Letter to Uncle Boonmee
           </div>
         </div>
+        <div class="content-flex-item">
+          <img class="features-list-img-preview" src="/assets/features/krathong.png" alt="loy-kathong"/>
+          <div class="feature-type">
+            BEHIND THE STORY
+          </div>
+          <div class="feature-title pseudo-link">
+             Why It Took Me a Full Year To Publish "Conversations"
+          </div>
+        </div>
+        <div class="content-flex-item">
+          <img style="object-position: right bottom" class="features-list-img-preview" src="/assets/features/javascript.jpeg" alt="laptop"/>
+          <div class="feature-type">
+            TECH
+          </div>
+          <div class="feature-title pseudo-link">
+            First Blog: A Website of CSS Misadventures
+          </div>
+        </div>
+      </div>
+      <div class="content-text page-vspace">
+    </div>
+
+    <div class="content-text content-form-text">
+      <div class="contact-form">
+        <div class="content-text get-in-touch">
+          Let's get in touch!
+        </div>
+        <div class="contact-field" data-validate = "Name is required">
+          <input class="contact-field" type="text" name="name" id="formName" placeholder="Name" autocomplete="off">
+        </div>
+        <div id="nameError" class="contact-error"> </div>
+
+        <div class="contact-field" data-validate = "Valid email is required">
+          <input class="contact-field" type="text" name="email" id="formEmail" placeholder="Email" autocomplete="off">
+        </div>
+        <div id="emailError" class="contact-error"> </div>
+
+        <div class="contact-field" data-validate = "Subject is required">
+          <input class="contact-field" type="text" name="subject" id="formSubject" placeholder="Subject" autocomplete="off">
+        </div>
+        <div id="subjectError" class="contact-error"> </div>
+
+        <div class="contact-field contact-field-area" data-validate = "Message is required">
+          <textarea class="contact-field" name="message" id="formMessage" placeholder="Message" autocomplete="off"></textarea>
+        </div>
+        <div id="messageError"  class="contact-error"> </div>
+        <div style="text-align: center; padding-bottom: 20px" id="submitButton">
+          <button class="contact-submit" onclick="consoleLog()">
+						<span>
+							Send message
+						</span>
+          </button>
+        </div>
+        <div>
+          <div class="message-sent hidden-element" id="messageSent">
+            Sent!
+          </div>
+        </div>
+        <div class="page-vspace"></div>
+        <div class="content-about">
+          <div>
+            <img src="assets/leandro.jpg" alt="leandro" class="about-image"/>
+            <div>
+              <div class="content-text">
+                About Me
+              </div>
+              <div style="padding-top: 8px"></div>
+              <div class="content-about-body">
+                Sawadee, I'm Leandro! I am a Computer Science graduate with experience in
+                full-stack development and data engineering. I also like writing
+                stories and sharing my thoughts,
+                and this (unfinished) website is a product of that.
+              </div>
+              <div class="content-about-body">
+                Outside of work, you'll find me flipping through my Thai
+                phrasebooks or watching films. Or probably sleeping.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="content-text">
-      I am a block of text. La la la. To quote Miss Mary J. Blige, "But I can see us lost in the memory/
-      August slipped away into a moment in time/
-      'Cause it was never mine". How come, Chief Willoughby?
-    </div>
-    <div class="content-quote">
-      The voice feels near, yet under this full moon and starlit skies there is nothing
-      else but the calm, the chill in the night, and the river- rushing with its
-      eternal vigor- breathing, flowing. The continuous shallow breaths of the
-      water hum in faint, crystal tones- the same voice that replied to my call.
-    </div>
-    <div class="content-text">
-      I am one line of text preceding an image.
-    </div>
-    <div>
-      <img class="blog-image blog-image-mobile" src="assets/siam-square.png" alt="siam-square"/>
-      <div class="img-caption">
-        Siam Square (2017), a genuinely scary horror movie in its first half until it
-        became cutesy and drowned in the power of friendship.
-      </div>
-    </div>
-    <div>
-      <img class="blog-image blog-image-mobile" src="assets/wasted-youth.png" alt="tell-em"/>
-      <div class="img-caption">
-        Ouch.
-      </div>
-    </div>
-    <div class="content-text">
-      I am another line of text. We're here just to see how things would look like.
-      I am a proud Asian American woman. I am a tiger mom.
-      Come back in a week or a month or a year or so, and I'll have content.
-      Lots of it. A whole bunch for you to read and laugh and hate and judge me for.
-    </div>
-    <div class="content-text">
-      We're gonna have so much fun.
-      <br>
-      Or at least I would.
-    </div>
-    <div class="side-note-text">
-      Updated Apr 18, 2021
-    </div>
+
   </div>
 </div>
