@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/assets/mystery/output-onlinepngtools.png">
+  <link href='https://fonts.googleapis.com/css?family=IM+Fell+English+SC&display=swap' rel='stylesheet'>
+  <meta name="theme-color" content="#ffffff">
+  <!--  <link rel="shortcut icon" href="favicon.png"/>-->
+  <title>Chapter IV</title>
+  <meta http-equiv="Content-Language" content="th">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-874">
+  <link rel="stylesheet" href="/css/murdermystery.css">
+</head>
+<body class="mystery-max-height page-background">
+<div class="mystery-max-height">
+  <div class="mystery-max-height mystery-vertical-center">
+    
+<div class="mystery-max-height font-forest">
+  <div class="mystery-main mystery-max-height">
+    <div class="mystery-max-height mystery-vertical-center mystery-flex">
+      <div class="mystery-screen">
+        <div style="padding-left: 6px; padding-right: 6px">
+          <div class="font-40 font-bold align-center">
+            <!--            I. A Comeuppance-->
+          </div>
+          <div class="display-flex" id="hideFour">
+            <div style="padding-right: 5px; padding-left: 5px">
+              <div style="position: relative">
+                <div style="position: absolute; top: 0; background-color: #e3e4b6; width: 130px; height: 40px" id="coal-cover">
+                </div>
+                <div class="font-28" style="position: absolute; right: 28px; bottom: 11px" id="coal-value">
+                  3
+                </div>
+                <img src="/assets/mystery/four-unit.png" height="100" width="40" />
+              </div>
+              <div class="display-flex font-28">
+                <div style="width: 28px" class="font-28 cursor-pointer" onclick="adjustBlock('coal', '-')">-</div>
+                <div style="width: 74px" class="font-24">
+                  Coal
+                </div>
+                <div style="width: 28px" class="font-28 cursor-pointer" onclick="adjustBlock('coal', '+')">+</div>
+              </div>
+            </div>
+            <div style="padding-right: 5px; padding-left: 5px">
+              <div style="position: relative">
+                <div style="position: absolute; top: 0; background-color: #e3e4b6; width: 130px; height: 40px" id="piston-cover">
+                </div>
+                <div class="font-28" style="position: absolute; right: 28px; bottom: 11px" id="piston-value">
+                  3
+                </div>
+                <img src="/assets/mystery/four-unit.png" height="100" width="40" />
+              </div>
+              <div class="display-flex font-28">
+                <div style="width: 28px" class="font-28 cursor-pointer" onclick="adjustBlock('piston', '-')">-</div>
+                <div style="width: 74px" class="font-24">Piston</div>
+                <div style="width: 28px" class="font-28 cursor-pointer" onclick="adjustBlock('piston', '+')">+</div>
+              </div>
+            </div>
+            <div style="padding-right: 5px; padding-left: 5px">
+              <div style="position: relative">
+                <div style="position: absolute; top: 0; background-color: #e3e4b6; width: 130px; height: 40px" id="valve-cover">
+                </div>
+                <div class="font-28" style="position: absolute; right: 28px; bottom: 11px" id="valve-value">
+                  3
+                </div>
+                <img src="/assets/mystery/four-unit.png" height="100" width="40" />
+              </div>
+              <div class="display-flex font-28">
+                <div style="width: 28px" class="font-28 cursor-pointer" onclick="adjustBlock('valve', '-')">-</div>
+                <div style="width: 74px" class="font-24">Valve</div>
+                <div style="width: 28px" class="font-28 cursor-pointer" onclick="adjustBlock('valve', '+')">+</div>
+              </div>
+            </div>
+            <div style="padding-right: 5px; padding-left: 5px">
+              <div style="position: relative">
+                <div style="position: absolute; top: 0; background-color: #e3e4b6; width: 130px; height: 40px" id="o-cover">
+                </div>
+                <div class="font-28" style="position: absolute; right: 28px; bottom: 11px" id="o-value">
+                  3
+                </div>
+                <img src="/assets/mystery/four-unit.png" height="100" width="40" />
+              </div>
+              <div class="display-flex font-28">
+                <div style="width: 28px" class="font-28 cursor-pointer" onclick="adjustBlock('o', '-')">-</div>
+                <div style="width: 74px" class="font-24">O2</div>
+                <div style="width: 28px" class="font-28 cursor-pointer" onclick="adjustBlock('o', '+')">+</div>
+              </div>
+            </div>
+            <div style="padding-right: 5px; padding-left: 5px">
+              <div style="position: relative">
+                <div style="position: absolute; top: 0; background-color: #e3e4b6; width: 130px; height: 40px" id="co-cover">
+                </div>
+                <div class="font-28" style="position: absolute; right: 28px; bottom: 11px" id="co-value">
+                  3
+                </div>
+                <img src="/assets/mystery/four-unit.png" height="100" width="40" />
+              </div>
+              <div class="display-flex font-28">
+                <div style="width: 28px" class="font-28 cursor-pointer" onclick="adjustBlock('co', '-')">-</div>
+                <div style="width: 74px" class="font-24">CO2</div>
+                <div style="width: 28px" class="font-28 cursor-pointer" onclick="adjustBlock('co', '+')">+</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-left font-24" style="padding-top: 20px">
+            - Coal units should be even.
+            <br>
+            - Piston units should be odd.
+            <br>
+            - Coal units should < than Piston units.
+            <br>
+            - Valve units should be the difference between Coal and Piston units.
+            <br>
+            - Valve units should also be the difference between O2 and CO2 units.
+            <br>
+            - The sum of O2 and CO2 units should be > 6.
+            <br>
+            - O2 units < CO2 units.
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+<script src="/js/murdermystery.js"></script>
+</body>
+</html>

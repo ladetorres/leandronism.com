@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/assets/mystery/output-onlinepngtools.png">
+  <link href='https://fonts.googleapis.com/css?family=IM+Fell+English+SC&display=swap' rel='stylesheet'>
+  <meta name="theme-color" content="#ffffff">
+  <!--  <link rel="shortcut icon" href="favicon.png"/>-->
+  <title>Chapter II</title>
+  <meta http-equiv="Content-Language" content="th">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-874">
+  <link rel="stylesheet" href="/css/murdermystery.css">
+</head>
+<body class="mystery-max-height page-background">
+<div class="mystery-max-height">
+  <div class="mystery-max-height mystery-vertical-center">
+    
+<div class="mystery-max-height font-forest">
+  <div class="mystery-main mystery-max-height">
+    <div class="mystery-max-height mystery-vertical-center mystery-flex">
+      <div class="mystery-screen">
+        <div style="padding-left: 6px; padding-right: 6px">
+          <div class="text-left font-22">
+            Three people (<b>Banker, Professor, Doctor</b>) checked in the Mountain Lodge in the same week.
+          </div>
+          <div class="text-left font-22" style="padding-top: 20px">
+            - stayed in a different room (<b>Room 104, 107, 119</b>),
+            <br>- requested for a different
+            thing (<b>breakfast, to extend, telephone call</b>), and
+            <br>- checked in on a different day (<b>Monday, Tuesday, Friday</b>).
+          </div>
+          <div class="text-left font-24" style="padding-top: 20px">
+            - Whoever stayed in Room 119 checked in the earliest.
+            <br>
+            - Whoever stayed in Room 107 requested to extend.
+            <br>
+            - Whoever checked in on Friday requested a telephone call.
+            <br>
+            - The Professor did not request a telephone call.
+            <br>
+            - The Banker did not stay in room 107.
+            <br>
+            - The Doctor did not check in on Monday.
+            <br>
+            - The Doctor arrived earlier than the Banker.
+          </div>
+          <div class="font-24 text-left" style="padding-top: 24px">
+            Then,
+          </div>
+          <div id="hideTwoAnswer" style="display: block">
+            <div class="font-24 text-left" style="padding-top: 24px">
+              The <b>Doctor</b> checked in at
+              <select name="doctor-date" id="doctor-date" class="custom-select" onclick="twoCheckAnswer()">
+                <option value="m" onclick="twoCheckAnswer()">Monday</option>
+                <option value="t" onclick="twoCheckAnswer()">Tuesday</option>
+                <option value="f" onclick="twoCheckAnswer()">Friday</option>
+              </select>,
+              stayed in
+              <select name="doctor-room" id="doctor-room" class="custom-select" onclick="twoCheckAnswer()">
+                <option value="104" onclick="twoCheckAnswer()">Room 104</option>
+                <option value="107" onclick="twoCheckAnswer()">Room 107</option>
+                <option value="119" onclick="twoCheckAnswer()">Room 119</option>
+              </select>,
+              and requested
+              <select name="doctor-request" id="doctor-request" class="custom-select" onclick="twoCheckAnswer()">
+                <option value="breakfast" onclick="twoCheckAnswer()">breakfast</option>
+                <option value="extend" onclick="twoCheckAnswer()">extension</option>
+                <option value="call" onclick="twoCheckAnswer()">telephone call</option>
+              </select>.
+            </div>
+            <div class="font-24 text-left" style="padding-top: 24px">
+              The <b>Professor</b> checked in at
+              <select name="prof-date" id="prof-date" class="custom-select" onclick="twoCheckAnswer()">
+                <option value="m" onclick="twoCheckAnswer()">Monday</option>
+                <option value="t" onclick="twoCheckAnswer()">Tuesday</option>
+                <option value="f" onclick="twoCheckAnswer()">Friday</option>
+              </select>,
+              stayed in
+              <select name="prof-room" id="prof-room" class="custom-select" onclick="twoCheckAnswer()">
+                <option value="104" onclick="twoCheckAnswer()">Room 104</option>
+                <option value="107" onclick="twoCheckAnswer()">Room 107</option>
+                <option value="119" onclick="twoCheckAnswer()">Room 119</option>
+              </select>,
+              and requested
+              <select name="prof-request" id="prof-request" class="custom-select" onclick="twoCheckAnswer()">
+                <option value="breakfast" onclick="twoCheckAnswer()">breakfast</option>
+                <option value="extend" onclick="twoCheckAnswer()">extension</option>
+                <option value="call" onclick="twoCheckAnswer()">telephone call</option>
+              </select>.
+            </div>
+            <div class="font-24 text-left" style="padding-top: 24px">
+              The <b>Banker</b> checked in at
+              <select name="banker-date" id="banker-date" class="custom-select" onclick="twoCheckAnswer()">
+                <option value="m" onclick="twoCheckAnswer()">Monday</option>
+                <option value="t" onclick="twoCheckAnswer()">Tuesday</option>
+                <option value="f" onclick="twoCheckAnswer()">Friday</option>
+              </select>,
+              stayed in
+              <select name="banker-room" id="banker-room" class="custom-select" onclick="twoCheckAnswer()">
+                <option value="104" onclick="twoCheckAnswer()">Room 104</option>
+                <option value="107" onclick="twoCheckAnswer()">Room 107</option>
+                <option value="119" onclick="twoCheckAnswer()">Room 119</option>
+              </select>,
+              and requested
+              <select name="banker-request" id="banker-request" class="custom-select" onclick="twoCheckAnswer()">
+                <option value="breakfast" onclick="twoCheckAnswer()">breakfast</option>
+                <option value="extend" onclick="twoCheckAnswer()">extension</option>
+                <option value="call" onclick="twoCheckAnswer()">telephone call</option>
+              </select>.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+<script src="/js/murdermystery.js"></script>
+</body>
+</html>
