@@ -1,0 +1,300 @@
+
+.mystery-max-height {
+  font-family: 'IM Fell English SC', serif, Arial;
+  height: 100vh !important;
+  margin: 0 !important;
+}
+.font-forest {
+  font-family: 'IM Fell English SC', serif, Arial;
+}
+.mystery-flex {
+  display: flex;
+}
+.mystery-vertical-center {
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mystery-main {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.mystery-screen {
+  border-radius: 8px;
+  background-color: #e3e4b6;
+  color: #002e0b;
+  height: 800px;
+  width: 700px;
+  padding: 10px;
+  padding-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.full-height {
+   height: 100%;
+   width: 700px;
+   border-radius: 8px;
+   background-color: #e3e4b6;
+   color: #002e0b;
+   padding: 10px;
+   margin-left: auto;
+   margin-right: auto;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.border-green {
+  border: 4px solid #404625;
+}
+.border-radius-12 {
+  border-radius: 12px;
+}
+.border-radius-6 {
+  border-radius: 6px;
+}
+.width-100 {
+  width: 100%;
+}
+
+/*console*/
+.console {
+  height: 340px;
+  width: 400px;
+  border: gray solid 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.console-nav {
+  height: 30px;
+  width: 30px;
+  border: black solid 2px;
+  margin-bottom: 20px;
+}
+
+/*input*/
+.display-flex {
+  display: flex;
+}
+.input-panel {
+  margin-top: 30px;
+  width: 500px;
+  height: 200px;
+  border: gray solid 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.long-input {
+  width: 50px;
+  height: 26px;
+  border: gray solid 2px;
+  margin: 6px;
+}
+
+.short-input {
+  width: 28px;
+  height: 26px;
+  padding-top: 4px;
+  border: gray solid 2px;
+  margin: 6px;
+}
+
+
+
+
+/*profile*/
+.mystery-profile {
+  border: 2px black solid;
+  height: 100px;
+  width: 90px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.mystery-personae {
+  height: 550px;
+  width: 600px;
+}
+.profile-preview {
+  height: 110px;
+  width: 80px;
+}
+.profile-view {
+  height: 300px;
+  width: 220px;
+  padding: 10px;
+}
+.profile-width {
+  width: 100px;
+}
+.personae-content {
+  width: 340px;
+}
+.mystery-profile-name {
+  width: 100px;
+}
+
+.char-key {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 45px;
+  height: 65px;
+  border: 4px solid #404625;
+  border-radius: 6px;
+  background-color: #8f9467;
+}
+.char-key-content {
+  padding-top: 14px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/*misc*/
+.align-center {
+  text-align: center;
+}
+.max-width {
+  min-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (min-width: 650px) {
+  .font-20 {
+    font-size: 20px;
+  }
+  .font-22 {
+    font-size: 22px;
+  }
+  .font-24 {
+    font-size: 24px;
+  }
+  .font-28 {
+    font-size: 28px;
+  }
+  .font-32 {
+    font-size: 32px;
+  }
+  .font-40 {
+    font-size: 40px;
+  }
+  .font-48 {
+    font-size: 48px;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 649px) {
+  .font-20 {
+    font-size: 18px;
+  }
+  .font-22 {
+    font-size: 19px;
+  }
+  .font-24 {
+    font-size: 20px;
+  }
+  .font-28 {
+    font-size: 24px;
+  }
+  .font-32 {
+    font-size: 28px;
+  }
+  .font-40 {
+    font-size: 32px;
+  }
+  .font-48 {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 449px) {
+  .font-20 {
+    font-size: 16px;
+  }
+  .font-22 {
+    font-size: 17px;
+  }
+  .font-24 {
+    font-size: 18px
+  }
+  .font-28 {
+    font-size: 22px;
+  }
+  .font-32 {
+    font-size: 26px;
+  }
+  .font-40 {
+    font-size: 34px;
+  }
+  .font-48 {
+    font-size: 42px;
+  }
+}
+
+
+.text-left {
+  text-align: left;
+}
+.font-bold {
+  font-weight: bold;
+}
+
+
+.page-background {
+  background-color: #593a0e;
+}
+.burning-red {
+  /*color: #a9420f*/
+}
+
+.custom-select {
+  background-color: #e3e4b6;
+
+  font-family: 'IM Fell English SC', serif, Arial;
+  font-size: 26px;
+  border: 4px;
+  margin-right: 8px;
+  color: #9c1d08;
+}
+
+.img-magnifier-container {
+  position:relative;;
+  pointer-events: auto;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 140px;
+  height: 140px;
+  pointer-events: auto;
+}
+
+
+/*.i-cross {*/
+/*  border: 2px solid white;*/
+/*  position: absolute;*/
+/*  width: 30px;*/
+/*  height: 40px;*/
+/*  top: 115px;*/
+/*  left: calc(50% - 185px);*/
+/*  pointer-events: auto;*/
+/*}*/
+/*.pls-work {*/
+/*  margin-top: 50px;*/
+/*  margin-bottom: auto;*/
+/*}*/
