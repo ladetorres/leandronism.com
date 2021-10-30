@@ -120,27 +120,68 @@
   margin-left: 10px;
   margin-right: 10px;
 }
-.mystery-personae {
-  height: 550px;
-  width: 600px;
+
+@media only screen and (min-width: 650px) {
+  .profile-width {
+    width: 100px;
+  }
+  .profile-text {
+    font-size: 16px;
+  }
+  .mystery-profile-name {
+    width: 100px;
+  }
+  .profile-preview {
+    height: 110px;
+    width: 80px;
+  }
+  .mobile-padding {
+    display: none;
+  }
+  .mystery-personae {
+    height: 550px;
+    width: 600px;
+  }
+  .profile-view {
+    height: 300px;
+    width: 220px;
+    padding: 10px;
+  }
 }
-.profile-preview {
-  height: 110px;
-  width: 80px;
-}
-.profile-view {
-  height: 300px;
-  width: 220px;
-  padding: 10px;
-}
-.profile-width {
-  width: 100px;
+@media only screen and (max-width: 650px) {
+  .profile-width {
+    width: 50px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .profile-text {
+    font-size: 12px;
+    /*margin-left: 4px;*/
+    /*margin-right: 4px;*/
+  }
+  .mystery-profile-name {
+    width: 50px;
+  }
+  .profile-preview {
+    height: 80px;
+    width: 50px;
+  }
+  .mobile-padding {
+    width: 10px;
+  }
+  .mystery-personae {
+    margin-left: 60px;
+    height: 550px;
+    width: 350px;
+  }
+  .profile-view {
+    height: 200px;
+    width: 160px;
+    padding: 5px;
+  }
 }
 .personae-content {
   width: 340px;
-}
-.mystery-profile-name {
-  width: 100px;
 }
 
 .char-key {
