@@ -1,7 +1,9 @@
-const debug = process.env.NODE_ENV !== 'production';
+// const debug = process.env.NODE_ENV !== 'production';
+const debug = false;
 
 module.exports = {
-  assetPrefix: !debug ? '/https://leandronism.com' : '',
+  // assetPrefix: !debug ? '' : '',
+  assetPrefix: !debug ? '' : '',
   env: {
     PUBLIC_URL: "https://leandronism.com",
     assetPrefix: './'
@@ -12,8 +14,4 @@ module.exports = {
       "/first-blog": { page: "/first-blog" },
     }
   },
-  images: {
-    loader: "imgix",
-    path: "",
-  }
 };
