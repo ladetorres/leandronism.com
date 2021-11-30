@@ -17,15 +17,18 @@ const BlogPage = props => (
       <link href='https://fonts.googleapis.com/css?family=Nunito:wght@200:300;400' rel='stylesheet'/>
       <link href='https://fonts.googleapis.com/css?family=Noto%20Sans%20JP' rel='stylesheet'/>
 
-      <meta name="twitter:card" content="summary" key="twcard" />
+      <meta name="twitter:image" content={`https://leandronism.com${props.src.src}`} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:description" content={`${props.subtitle}`} />
+      <meta name="twitter:title" content={`${props.head}`} />
       <meta name="twitter:creator" content={"@9eandro"} key="twhandle" />
 
       {/* Open Graph */}
-      <meta property="og:image" content={props.src} key="ogimage" />
+      <meta property="og:image" content={`https://leandronism.com${props.src.src}`} key="ogimage" />
 
       <meta property="og:type" content="website" />
-      <meta name="image" property="og:image:secure_url" content={props.src} />
-      <meta name="image" property="og:image" content={props.src} />
+      <meta name="image" property="og:image:secure_url" content={`https://leandronism.com${props.src.src}`} />
+      <meta name="image" property="og:image" content={`https://leandronism.com${props.src.src}`} />
 
       <title>{props.head}</title>
     </Head>

@@ -10,7 +10,7 @@ const FirstBlog = () => (
       date={articles["first-blog"].date}
       title={articles["first-blog"].title}
       subtitle={articles["first-blog"].subtitle}
-      url={articles["first-blog"].url}
+      url={articles["first-blog"].link}
       photoCredit={articles["first-blog"].photoCredit}
       photoCreditLink={articles["first-blog"].photoCreditLink}
   >

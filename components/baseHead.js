@@ -17,6 +17,12 @@ const BaseHead = props => (
       <meta name="image" property="og:image:secure_url" content="https://leandronism.com/screenshot.png" />
       <meta name="image" property="og:image" content="https://leandronism.com/screenshot.png" />
 
+      <meta name="twitter:image" content="https://leandronism.com/screenshot.png" key="twcard" />
+      <meta name="twitter:card" content="summary_large_image" key="twcard" />
+      <meta name="twitter:title" content={`${props.head}`} />
+      <meta name="twitter:creator" content={"@9eandro"} key="twhandle" />
+      <meta name="twitter:description" content={"Sawadee, I'm Leandro! Welcome to my site."} />
+
       <meta property="og:image:type" content="image/jpeg" />
       <meta property="og:image:alt" content="leandronism" />
       <meta property="og:image:width" content="852" />
