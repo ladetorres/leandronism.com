@@ -30,6 +30,8 @@ const BlogPage = props => (
       <meta name="image" property="og:image:secure_url" content={`https://leandronism.com${props.src.src}`} />
       <meta name="image" property="og:image" content={`https://leandronism.com${props.src.src}`} />
 
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
       <title>{props.head}</title>
     </Head>
     <Header />
@@ -48,26 +50,76 @@ const BlogPage = props => (
             </div>
           </Link>
         </div>
-        <div className="text-24 pt-10 pb-2">
+        <div className="text-20 md:text-24 pt-10 pb-2">
           {props.title}
         </div>
         <div className="text-12 pt-2 pb-20 text-granite-rock">
           {props.date}
         </div>
-        <div className=" text-granite-rock pb-40 md:pb-50">
+        <div className={props.movieDir ? "text-12 text-granite-rock pb-10" : "hidden"}>
+          Dir. {props.movieDir}
+        </div>
+        <div className="flex flex-row text-12 text-granite-rock pt-2 pb-10">
+          <div className={props.movieI ? "block pr-10" : "hidden"}>
+            <a href={`${props.movieI}`} className="text-blue-link" target="_blank" rel="noreferrer">
+              IMDB
+            </a>
+          </div>
+          <div className={props.movieL ? "block pr-10" : "hidden"}>
+            <a href={`${props.movieL}`} className="text-blue-link" target="_blank" rel="noreferrer">
+              Letterboxd
+            </a>
+          </div>
+          <div className={props.movieRt ? "block pr-10" : "hidden"}>
+            <a href={`${props.movieRt}`} className="text-blue-link" target="_blank" rel="noreferrer">
+              RT
+            </a>
+          </div>
+          <div className={props.movieM ? "block pr-10" : "hidden"}>
+            <a href={`${props.movieM}`} className="text-blue-link" target="_blank" rel="noreferrer">
+              Metacritic
+            </a>
+          </div>
+          <div className={props.movieTrailer ? "hidden md:block text-12 text-granite-rock block pr-10 pl-30" : "hidden"}>
+            <a href={`${props.movieTrailer}`} className="text-blue-link" target="_blank" rel="noreferrer">
+              Trailer
+            </a>
+          </div>
+        </div>
+        <div className={props.movieTrailer ? "block md:hidden text-12 text-granite-rock block" : "hidden"}>
+          <a href={`${props.movieTrailer}`} className="text-blue-link" target="_blank" rel="noreferrer">
+            Trailer
+          </a>
+        </div>
+
+        <div className=" text-granite-rock pb-20">
           {props.children}
         </div>
 
-        <div className="text-12 text-granite-rock">
+        <div className={props.movieRating ? "flex flex-row pb-30 md:pb-40" : "hidden"}>
+          {Array(Math.floor((props.movieRating || 0) / 2)).fill(0).map((item)=>{
+            return <i className="material-icons" key={`${item}`}>star</i>
+          })}
+          <i className={(props.movieRating || 0) % 2 === 1 ? "material-icons" : "hidden"}>star_half</i>
+          {Array(Math.floor((10 - (props.movieRating || 0)) / 2)).fill(0).map((item)=>{
+            return <i className="material-icons" key={`${item}`}>star_border</i>
+          })}
+        </div>
+        <div className={!props.movieRating ? "pb-20 md:pb-30" : "hidden"} />
+
+        <div className={props.photoCreditString ? "hidden" : "text-12 text-granite-rock"}>
           Photo by{" "}
           <a href={`${props.photoCreditLink}`} className="underline">{props.photoCredit}</a>
           {" "}on{" "}
           <a href="https://unsplash.com/s/photos/laptop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" className="underline">Unsplash</a>
         </div>
+        <div className={props.photoCreditString ? "text-12 text-granite-rock" : "hidden"}>
+          {props.photoCreditString}
+        </div>
       </div>
     </div>
-    <div className="pt-30">
-      <Footer />
+    <div className="pt-30 pb-40 md:pb-50">
+      {/*<Footer />*/}
 
     </div>
   </>
