@@ -170,7 +170,7 @@ const Index = (props) => {
             )}
           </div>
         </div>
-        <div className="pl-10 text-18 md:text-20 md:pl-50 pt-20 md:pt-30 text-granite-rock">
+        <div className="pl-10 text-18 md:text-20 md:pl-50 pt-20 md:pt-30 text-granite-rock pb-50">
           <div className="cursor-pointer" onClick={recalculate}>Start</div>
         </div>
       </div>
