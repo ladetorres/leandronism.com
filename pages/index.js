@@ -32,6 +32,14 @@ const Index = () => (
         title={articles["bkk-2019"].title}
         subtitle={articles["bkk-2019"].subtitle}
       />
+      <Blog
+        link={articles["review-succession"].link}
+        available={articles["review-succession"].available}
+        date={articles["review-succession"].date}
+        src={articles["review-succession"].src}
+        title={articles["review-succession"].title}
+        subtitle={articles["review-succession"].subtitle}
+      />
     </div>
     <div className="mx-auto w-blog-home-xs sm:w-blog-home-sm md:w-blog-home-md lg:w-blog-home flex flex-row pb-20 md:pb-50">
       <div className="h-chevron w-chevron relative opacity-50 ml-auto cursor-pointer mr-16">

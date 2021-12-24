@@ -8,6 +8,7 @@ module.exports = {
       header: "-14px",
     },
     height: {
+      o: "0",
       auto: "auto",
       "footer-icon": "32px",
       70: "70px",
@@ -18,6 +19,8 @@ module.exports = {
       screen: "600px",
       test: "1500px",
       chevron: "26px",
+      checkbox: "20px",
+      "checkbox-sm": "18px",
 
       "blog-home": "380px",
 
@@ -31,13 +34,21 @@ module.exports = {
       "blog-page-sm": "290px",
       "blog-page-md": "320px",
 
+      card: "360px",
+      "card-md": "340px",
+      "card-sm": "320px",
+      "card-xs": "300px",
+
     },
     width: {
+      o: "0",
       auto: "auto",
       "footer-icon": "32px",
       full: "100%",
       screen: "350px",
       chevron: "26px",
+      checkbox: "20px",
+      "checkbox-sm": "18px",
 
       "blog-home": "520px",
       "blog-home-md": "460px",
@@ -62,6 +73,11 @@ module.exports = {
       "blog-credits": "120px",
       "blog-credits-md": "100px",
 
+      card: "560px",
+      "card-md": "480px",
+      "card-sm": "360px",
+      "card-xs": "100%",
+
     },
     margin: {
       "neg-8": "-8px",
@@ -71,6 +87,7 @@ module.exports = {
       30: "30px",
       16: "16px",
       6: "6px",
+      4: "4px",
     },
     padding: {
       50: "50px",
@@ -93,6 +110,11 @@ module.exports = {
       22: "22px",
       24: "24px",
       28: "28px",
+      32: "32px",
+      36: "36px",
+      40: "40px",
+      44: "44px",
+      48: "48px",
     },
     fontWeight: {
       700: "700",

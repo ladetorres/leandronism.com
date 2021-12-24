@@ -1,7 +1,7 @@
-
 import Laptop from "../../assets/blogs/laptop.jpg";
 import Memoria from "../../assets/blogs/memoria-3.jpg";
 import Bkk from "../../assets/blogs/bkk-6.jpeg";
+import Succession from "../../assets/blogs/succession-frame.png";
 
 const articles = {
     "first-blog": {
@@ -40,6 +40,15 @@ const articles = {
       available: false,
       date: "",
       src: Bkk,
+  },
+    "review-succession": {
+      head: "Succession Season 3 - leandronism",
+      title: "In Frames: Succession Season 3",
+      subtitle: "",
+      link: "/review-succession",
+      available: false,
+      date: "",
+      src: Succession,
   },
 };
 
