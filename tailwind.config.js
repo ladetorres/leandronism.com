@@ -70,12 +70,17 @@ module.exports = {
       "blog-content-sm": "58%",
       "blog-content-md": "48%",
 
+      "blog-wide-content": "660px",
+      "blog-wide-content-xs": "90%",
+      "blog-wide-content-sm": "68%",
+      "blog-wide-content-md": "58%",
+
       "blog-credits": "120px",
       "blog-credits-md": "100px",
 
-      card: "560px",
-      "card-md": "480px",
-      "card-sm": "360px",
+      card: "600px",
+      "card-md": "520px",
+      "card-sm": "380px",
       "card-xs": "100%",
 
     },
@@ -115,6 +120,8 @@ module.exports = {
       40: "40px",
       44: "44px",
       48: "48px",
+      52: "52px",
+      56: "56px",
     },
     fontWeight: {
       700: "700",

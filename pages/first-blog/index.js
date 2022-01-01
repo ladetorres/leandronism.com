@@ -39,7 +39,7 @@ const FirstBlog = () => (
       A quick Google search tells me that GatsbyJS is the best alternative for
       building static sites
       quickly, but for reasons I&apos;m legally obligated not to say,
-      I gonna skip that.
+      I'm gonna skip that.
 
       <div className="py-8"/>
       Big whoop. Anyway.

@@ -106,6 +106,20 @@ const Index = (props) => {
     }
   };
 
+  if (process.browser) {
+    document.addEventListener("keydown", function(event) {
+      if (event.key === "ArrowRight") {
+        nextCard();
+      }
+      if (event.key === "ArrowLeft") {
+        prevCard();
+      }
+      if (event.key === "Enter") {
+        toggle();
+      }
+    });
+  }
+
   return (
     <>
       <BaseHead />
@@ -135,13 +149,14 @@ const Index = (props) => {
         <title>Thai Flashcards - leandronism</title>
       </Head>
       <Header />
-      <div className="w-blog-content-xs sm:w-blog-content-sm md:w-blog-content-md lg:w-blog-content relative mx-auto font-nunito font-200">
+      <div className="w-blog-wide-content-xs sm:w-blog-wide-content-sm md:w-blog-wide-content-md lg:w-blog-wide-content relative mx-auto font-nunito font-200">
         <div className="mx-auto text-center pt-30 pb-30 text-granite-rock">
           {activeIndex} / {m}
         </div>
         <Flashcard
           class="mx-auto"
           en={activeCard.en}
+          sub={activeCard.enSub}
           th={activeCard.th}
           text={activeText}
           activeLeft={activeLeft}

@@ -22,10 +22,12 @@ const Flashcard = props => {
             className="block text-center w-full flex flex-row"
             onClick={props.toggle}
           >
-            <div className="my-auto mx-auto">
-              <div className="text-40 md:text-48 text-granite-rock">
-                {/*{displayText ? props.th : props.en}*/}
+            <div className="my-auto mx-auto text-granite-rock">
+              <div className="text-44 md:text-52 text-granite-rock">
                 {props.text}
+              </div>
+              <div className="text-24 md:text-28 pt-4 md:pt-10 text-granite-rock">
+                {props.text === props.en ? props.sub : null}
               </div>
             </div>
           </div>
