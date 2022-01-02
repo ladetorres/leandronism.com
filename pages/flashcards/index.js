@@ -1,6 +1,5 @@
 import BaseHead from "../../components/baseHead";
 import Flashcard from "../../components/flashCard";
-import Head from "next/head";
 import Header from "../../components/header";
 import {flashcards} from "../../pages/api/flashcards";
 import { useState } from 'react';
@@ -122,34 +121,16 @@ const Index = (props) => {
 
   return (
     <>
-      <BaseHead />
-      <Head>
-        <meta property="og:description" content="Thai Flashcasrds - leandronism" />
-        <meta property="og:url" content="https://leandronism.com/flashcards"/>
-        <meta property="og:title" content="Thai Flashcasrds - leandronism" />
-        <meta name="author" content="Leandro De Torres" />
-        <link href='https://fonts.googleapis.com/css?family=Nunito:wght@200:300;400' rel='stylesheet'/>
-        <link href='https://fonts.googleapis.com/css?family=Noto%20Sans%20JP' rel='stylesheet'/>
-
-        <meta name="twitter:image" content="https://leandronism.com/screenshot.png" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:description" content="Thai Flashcasrds - leandronism" />
-        <meta name="twitter:title" content="Thai Flashcasrds - leandronism" />
-        <meta name="twitter:creator" content={"@9eandro"} key="twhandle" />
-
-        {/* Open Graph */}
-        <meta property="og:image" content={`https://leandronism.com${props.src}`} key="ogimage" />
-
-        <meta property="og:type" content="website" />
-        <meta name="image" property="og:image:secure_url" content="https://leandronism.com/screenshot.png" />
-        <meta name="image" property="og:image" content="https://leandronism.com/screenshot.png" />
-
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-
-        <title>Thai Flashcards - leandronism</title>
-      </Head>
+      <BaseHead
+        title="leandronism - Thai Flashcards"
+        image="https://leandronism.com/screenshot.png"
+        description="Thai flashcards to help me memorize thai common words"
+        url="https://leandronism.com/flashcards"
+      />
       <Header />
-      <div className="w-blog-wide-content-xs sm:w-blog-wide-content-sm md:w-blog-wide-content-md lg:w-blog-wide-content relative mx-auto font-nunito font-200">
+      <div
+        className="w-blog-wide-content-xs sm:w-blog-wide-content-sm md:w-blog-wide-content-md lg:w-blog-wide-content relative mx-auto font-nunito font-200"
+      >
         <div className="mx-auto text-center pt-30 pb-30 text-granite-rock">
           {activeIndex} / {m}
         </div>
@@ -178,14 +159,18 @@ const Index = (props) => {
                   type="checkbox"
                   onChange={updateCardCats}
                 />
-                <div className={`capitalize pb-10 align-middle h-32 pl-10 ${i.val ? 'opacity-100' : 'opacity-75'}`}>
+                <div
+                  className={`capitalize pb-10 align-middle h-32 pl-10 ${i.val ? 'opacity-100' : 'opacity-75'}`}
+                >
                   {i.text}
                 </div>
               </div>
             )}
           </div>
         </div>
-        <div className="pl-10 text-18 md:text-20 md:pl-50 pt-20 md:pt-30 text-granite-rock pb-50">
+        <div
+          className="pl-10 text-18 md:text-20 md:pl-50 pt-20 md:pt-30 text-granite-rock pb-50"
+        >
           <div className="cursor-pointer" onClick={recalculate}>Start</div>
         </div>
       </div>

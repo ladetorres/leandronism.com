@@ -1,7 +1,6 @@
 import Left from "../assets/common/chevron_left.png";
 import Right from "../assets/common/chevron_right.png";
 import Image from "next/image";
-import { useState } from 'react';
 
 const Flashcard = props => {
   return (

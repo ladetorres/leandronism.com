@@ -4,8 +4,15 @@ import BaseHead from "./baseHead";
 
 const BaseLayout = props => (
   <>
-    <BaseHead />
-    <div className="text-granite-rock min-w-screen min-w-screen h-full font-montserrat m-0 p-0 flex">
+    <BaseHead
+      title={props.title}
+      image={props.image}
+      description={props.description}
+      url={props.url}
+    />
+    <div
+      className="text-granite-rock min-w-screen min-w-screen h-full font-montserrat m-0 p-0 flex"
+    >
       <div className="min-w-full font-montserrat text-center">
         {/*<Progress />*/}
         <Header />

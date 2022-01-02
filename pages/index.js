@@ -6,7 +6,12 @@ import Right from "../assets/common/chevron_right.png";
 import {articles} from "../pages/api/articles";
 
 const Index = () => (
-  <BaseLayout>
+  <BaseLayout
+    title="leandronism"
+    image="https://leandronism.com/screenshot.png"
+    description="Sawadee, I'm Leandro! Welcome to my site."
+    url="https://leandronism.com"
+  >
     <div className="">
       <Blog
         link={articles["first-blog"].link}
