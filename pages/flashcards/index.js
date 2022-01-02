@@ -122,9 +122,9 @@ const Index = (props) => {
   return (
     <>
       <BaseHead
-        title="leandronism - Thai Flashcards"
-        image="https://leandronism.com/screenshot.png"
-        description="Thai flashcards to help me memorize thai common words"
+        title="Thai Flashcards - leandronism"
+        image="https://leandronism.com/screenshot-flashcards.png"
+        description="Thai flashcards to help me memorize common Thai words"
         url="https://leandronism.com/flashcards"
       />
       <Header />
